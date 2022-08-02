@@ -33,6 +33,7 @@ const Home = () => {
                     </SelectForm>
                     <BtnSend>Pedir cotação</BtnSend>
                     <PPrivacity>Privacidade 100% garantida.</PPrivacity>
+                    
                 </Form>
             </MainContent>
         </>
