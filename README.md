@@ -1,5 +1,12 @@
 # Getting Started with Create React App
 
+colors
+
+#0d2329 verde 1 escurissimo
+#b8ec5b verde 2 claro
+#4be572 verde 3
+#10cea0 verde 4
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
