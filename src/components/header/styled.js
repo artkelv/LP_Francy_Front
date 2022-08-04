@@ -5,13 +5,12 @@ export const ContentHeader = styled.header`
     justify-content: space-around;
     padding: 15px 0;
 `
-export const ListHeader = styled.ul`
-    list-style: none;
+export const ListHeader = styled.nav`
+    height: 100%;
     display: flex;
     align-items: center;
-    margin: 0;
+    list-style: none;
     padding: 0;
-    //background-color: aliceblue;
 `
 export const AncorBenefits = styled.a`
     color: #10CEA0;

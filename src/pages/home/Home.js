@@ -2,6 +2,7 @@ import React from 'react'
 import Header from '../../components/header/Header'
 import { MainContent, SectionTitles, Form, Title, SubTitle, SectionBroker, AncorForBroker, TitleForm, PgraphForm, InputForm, SelectForm, BtnSend, PPrivacity } from "./styled"
 import logoWhatsapp from "../../assets/logo_whatsapp.png"
+import WhyFrancy from '../../components/whyFrancy/WhyFrancy'
 
 const Home = () => {
     return(
@@ -32,10 +33,10 @@ const Home = () => {
                         <option value="">Empresarial</option>
                     </SelectForm>
                     <BtnSend>Pedir cotação</BtnSend>
-                    <PPrivacity>Privacidade 100% garantida.</PPrivacity>
-                    
+                    <PPrivacity>Privacidade 100% garantida.</PPrivacity>   
                 </Form>
             </MainContent>
+            <WhyFrancy/>
         </>
     )
 }
