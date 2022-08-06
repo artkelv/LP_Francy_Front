@@ -3,6 +3,7 @@ import Header from '../../components/header/Header'
 import { MainContent, SectionTitles, Form, Title, SubTitle, SectionBroker, AncorForBroker, TitleForm, PgraphForm, InputForm, SelectForm, BtnSend, PPrivacity } from "./styled"
 import logoWhatsapp from "../../assets/logo_whatsapp.png"
 import WhyFrancy from '../../components/whyFrancy/WhyFrancy'
+import Plans from '../../components/plans/Plans'
 
 const Home = () => {
     return(
@@ -37,6 +38,7 @@ const Home = () => {
                 </Form>
             </MainContent>
             <WhyFrancy/>
+            <Plans/>
         </>
     )
 }
