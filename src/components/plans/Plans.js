@@ -1,92 +1,99 @@
+import Ic from "../iconCheck/Icon.js"
+import { 
+    ArticTitlePrice, TitlePlans, PgraphPlans, CardPriceSection, FirstCardPrice, SecondCardPrice,
+    ThirdCardPrice, FourthCardPrice, TitleCard, SubTitle, PriceCard, PerMonth, ListBenefits,
+    BtnPlan
+} from "./styled"
+
 const Plans = () => {
     return(
             <section>
-                <article>
-                    <h3>Planos ideais</h3>
-                    <p>Confira alguns dos nossos melhores planos abaixo.</p>
-                </article>
-                <section>
-                    <div>
+                <ArticTitlePrice>
+                    <TitlePlans>Planos ideais</TitlePlans>
+                    <PgraphPlans>Confira alguns dos nossos melhores planos abaixo.</PgraphPlans>
+                </ArticTitlePrice>
+                <CardPriceSection>
+                    <FirstCardPrice>
                         <section>
-                            <h4>Sulámerica</h4>
-                            <span>a partir de</span>
+                            <TitleCard>SulÁmerica</TitleCard>
+                            <SubTitle>a partir de</SubTitle>
                         </section>
                         <section>
-                            <span><strong>$ 119,90</strong></span>
-                            <span>por mês</span>
+                            <PriceCard>$ 119,90</PriceCard>
+                            <PerMonth>por mês</PerMonth>
                         </section>
                         <section>
-                            <ul>
-                                <li>Consultas Médicas</li>
-                                <li>Todos os exames</li>
-                                <li>Atendimento 24hrs</li>
-                                <li>Homecare e Parto</li>
-                                <li>Cirurgias e internações</li>
-                            </ul>
+                            <ListBenefits>
+                                <li><Ic/>Consultas Médicas</li>
+                                <li><Ic/>Todos os exames</li>
+                                <li><Ic/>Atendimento 24hrs</li>
+                                <li><Ic/>Homecare e Parto</li>
+                                <li><Ic/>Cirurgias e internações</li>
+                            </ListBenefits>
                         </section>
-                        <button>Obter Plano</button>
-                    </div>
-                    <div>
+                        <BtnPlan>Obter Plano</BtnPlan>
+                    </FirstCardPrice>
+                    <SecondCardPrice>
                         <section>
-                            <h4>Amil 400</h4>
-                            <span>a partir de</span>
-                        </section>
-                        <section>
-                            <span><strong>$ 240,90</strong></span>
-                            <span>por mês</span>
+                            <TitleCard>Amil 400</TitleCard>
+                            <SubTitle>a partir de</SubTitle>
                         </section>
                         <section>
-                            <ul>
-                                <li>Consultas Médicas</li>
-                                <li>Todos os exames</li>
-                                <li>Atendimento 24hrs</li>
-                                <li>Homecare e Parto</li>
-                                <li>Cirurgias e internações</li>
-                            </ul>
-                        </section>
-                        <button>Obter Plano</button>
-                    </div>
-                    <div>
-                        <section>
-                            <h4>Bradesco Saúde</h4>
-                            <span>a partir de</span>
+                            <PriceCard>$ 240,90</PriceCard>
+                            <PerMonth>por mês</PerMonth>
                         </section>
                         <section>
-                            <span><strong>$ 339,90</strong></span>
-                            <span>por mês</span>
+                            <ListBenefits>
+                                <li><Ic/>Consultas Médicas</li>
+                                <li><Ic/>Todos os exames</li>
+                                <li><Ic/>Atendimento 24hrs</li>
+                                <li><Ic/>Homecare e Parto</li>
+                                <li><Ic/>Cirurgias e internações</li>
+                            </ListBenefits>
+                        </section>
+                        <BtnPlan>Obter Plano</BtnPlan>
+                    </SecondCardPrice>
+                    <ThirdCardPrice>
+                        <section>
+                            <TitleCard>Bradesco Saúde</TitleCard>
+                            <SubTitle>a partir de</SubTitle>
                         </section>
                         <section>
-                            <ul>
-                                <li>Consultas Médicas</li>
-                                <li>Todos os exames</li>
-                                <li>Atendimento 24hrs</li>
-                                <li>Homecare e Parto</li>
-                                <li>Cirurgias e internações</li>
-                            </ul>
-                        </section>
-                        <button>Obter Plano</button>
-                    </div>
-                    <div>
-                        <section>
-                            <h4>Unimed Rio</h4>
-                            <span>a partir de</span>
+                            <PriceCard>$ 339,90</PriceCard>
+                            <PerMonth>por mês</PerMonth>
                         </section>
                         <section>
-                            <span><strong>$ 229,90</strong></span>
-                            <span>por mês</span>
+                            <ListBenefits>
+                                <li><Ic/>Consultas Médicas</li>
+                                <li><Ic/>Todos os exames</li>
+                                <li><Ic/>Atendimento 24hrs</li>
+                                <li><Ic/>Homecare e Parto</li>
+                                <li><Ic/>Cirurgias e internações</li>
+                            </ListBenefits>
+                        </section>
+                        <BtnPlan>Obter Plano</BtnPlan>
+                    </ThirdCardPrice>
+                    <FourthCardPrice>
+                        <section>
+                            <TitleCard>Unimed Rio</TitleCard>
+                            <SubTitle>a partir de</SubTitle>
                         </section>
                         <section>
-                            <ul>
-                                <li>Consultas Médicas</li>
-                                <li>Todos os exames</li>
-                                <li>Atendimento 24hrs</li>
-                                <li>Homecare e Parto</li>
-                                <li>Cirurgias e internações</li>
-                            </ul>
+                           <PriceCard>$ 229,90</PriceCard>
+                            <PerMonth>por mês</PerMonth>
                         </section>
-                        <button>Obter Plano</button>
-                    </div>
-                </section>    
+                        <section>
+                            <ListBenefits>
+                                <li><Ic/>Consultas Médicas</li>
+                                <li><Ic/>Todos os exames</li>
+                                <li><Ic/>Atendimento 24hrs</li>
+                                <li><Ic/>Homecare e Parto</li>
+                                <li><Ic/>Cirurgias e internações</li>
+                            </ListBenefits>
+                        </section>
+                        <BtnPlan>Obter Plano</BtnPlan>
+                    </FourthCardPrice>
+                </CardPriceSection>    
             </section>
     )
 }
