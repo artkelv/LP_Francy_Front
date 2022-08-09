@@ -4,6 +4,7 @@ import { MainContent, SectionTitles, Form, Title, SubTitle, SectionBroker, Ancor
 import logoWhatsapp from "../../assets/logo_whatsapp.png"
 import WhyFrancy from '../../components/whyFrancy/WhyFrancy'
 import Plans from '../../components/plans/Plans'
+import Operators from '../../components/operators/Operators'
 
 const Home = () => {
     return(
@@ -39,6 +40,7 @@ const Home = () => {
             </MainContent>
             <WhyFrancy/>
             <Plans/>
+            <Operators/>
         </>
     )
 }
