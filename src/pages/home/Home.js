@@ -5,6 +5,7 @@ import logoWhatsapp from "../../assets/logo_whatsapp.png"
 import WhyFrancy from '../../components/whyFrancy/WhyFrancy'
 import Plans from '../../components/plans/Plans'
 import Operators from '../../components/operators/Operators'
+import Footer from '../../components/footer/footer'
 
 const Home = () => {
     return(
@@ -41,6 +42,7 @@ const Home = () => {
             <WhyFrancy/>
             <Plans/>
             <Operators/>
+            <Footer/>
         </>
     )
 }
