@@ -13,7 +13,7 @@ export const ListHeader = styled.nav`
     padding: 0;
 `
 export const AncorBenefits = styled.a`
-    color: #10CEA0;
+    color: #0C9271; //#10CEA0
     text-decoration: none;
     transition:0.2s;
     &:hover{
@@ -21,7 +21,7 @@ export const AncorBenefits = styled.a`
     }
 `
 export const AncorPlans = styled.a`
-    color: #10CEA0;
+    color: #0C9271;
     text-decoration: none;
     padding: 0 40px;
     transition:0.5s;

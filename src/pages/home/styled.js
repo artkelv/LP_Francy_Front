@@ -7,6 +7,7 @@ export const MainContent = styled.main`
     background-repeat: no-repeat;
     display: flex;
     justify-content: space-evenly;
+    padding: 4% 0;
 `
 export const SectionTitles = styled.section`
     order: 2;

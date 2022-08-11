@@ -3,9 +3,10 @@ import ApertoDeMaos from "../../assets/aperto_maos.png";
 import CoracaoMedicina from "../../assets/coracao_medicina.png";
 import IcoDinheiro from "../../assets/ico_dinheiro.png";
 import Ico_Relogio from "../../assets/ico_relogio.png";
+import logoWhatsapp from "../../assets/logo_whatsapp.png"
 import { 
-    SectionWhyFrancy, TitleWhyFrancy, SectionBenefits, DescriptionBenefits, TitleBenefits, PgraphBenefits,
-    FigureEndSection 
+    SectionWhyFrancy, TitleWhyFrancy, SectionBenefits, TesteSec, DescriptionBenefits, TitleBenefits,
+    PgraphBenefits, AncorWpp, BtnWpp, ContentWpp, FigureEndSection 
 } from "./styled"
 
 const WhyFrancy = () => {
@@ -18,7 +19,7 @@ const WhyFrancy = () => {
                     <TitleWhyFrancy>Por que escolher a Francy Seguros?</TitleWhyFrancy>
                 </SectionWhyFrancy>
                 <SectionBenefits>
-                    <section>
+                    <TesteSec>
                         <DescriptionBenefits>
                             <img src={ApertoDeMaos} alt="Imagem de aperto de mãos" width="80"/>
                             <TitleBenefits>Compromisso</TitleBenefits>
@@ -29,8 +30,8 @@ const WhyFrancy = () => {
                             <TitleBenefits>Referência na área</TitleBenefits>
                             <PgraphBenefits>Há mais de 25 anos no mercado, fidelizando clientes.</PgraphBenefits>
                         </DescriptionBenefits>
-                    </section>
-                    <section>
+                    </TesteSec>
+                    <TesteSec>
                         <DescriptionBenefits>
                             <img src={IcoDinheiro} alt="Imagem dinheiro" width="80"/>
                             <TitleBenefits>Planos perfeitos</TitleBenefits>
@@ -38,13 +39,18 @@ const WhyFrancy = () => {
                         </DescriptionBenefits>
                         <DescriptionBenefits>
                             <img src={Ico_Relogio} alt="Imagem relógio" width="80"/>
-                            <TitleBenefits>Agelidade e rapidez</TitleBenefits>
+                            <TitleBenefits>Agilidade e rapidez</TitleBenefits>
                             <PgraphBenefits>As solitações online são respondidas em ate 1 hora.</PgraphBenefits>
                         </DescriptionBenefits>
-                    </section>
+                    </TesteSec>
                 </SectionBenefits>
                     {/* <a href='https://br.freepik.com/fotos-vetores-gratis/mulher-tecnologia'>Mulher tecnologia foto criado por rawpixel.com - br.freepik.com</a> */} 
-                <FigureEndSection/>
+                <FigureEndSection>
+                    <ContentWpp>
+                        <AncorWpp href="">falar com corretor</AncorWpp>
+                        <img src={logoWhatsapp} width="30"/>
+                    </ContentWpp>
+                </FigureEndSection>
             </aside>
     )
 }

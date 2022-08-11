@@ -26,7 +26,7 @@ const Home = () => {
                 <Form action="">
                     <TitleForm>Faça uma cotação</TitleForm>
                     <PgraphForm>É gratuito.</PgraphForm>
-                    <InputForm type="name" placeholder='Name'/>
+                    <InputForm type="name" placeholder='Nome'/>
                     <InputForm type="email" placeholder='E-mail'/>
                     <InputForm type="tel" placeholder='Telefone'/>
                     <SelectForm>
