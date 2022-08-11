@@ -7,7 +7,3 @@ export const GlobalStyle = createGlobalStyle`
         font-family: 'Poppins', sans-serif;
     }
 `
-/*
-font-family: 'Inria Serif', serif;
-font-family: 'Poppins', sans-serif;
-*/ 

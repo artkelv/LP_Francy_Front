@@ -6,7 +6,7 @@ import Ico_Relogio from "../../assets/ico_relogio.png";
 import logoWhatsapp from "../../assets/logo_whatsapp.png"
 import { 
     SectionWhyFrancy, TitleWhyFrancy, SectionBenefits, TesteSec, DescriptionBenefits, TitleBenefits,
-    PgraphBenefits, AncorWpp, BtnWpp, ContentWpp, FigureEndSection 
+    PgraphBenefits, AncorWpp, ContentWpp, FigureEndSection 
 } from "./styled"
 
 const WhyFrancy = () => {
@@ -16,7 +16,7 @@ const WhyFrancy = () => {
                     <figure>
                         <img src={SetaParaDireita} alt="Seta a direita" width="250"/>
                     </figure>
-                    <TitleWhyFrancy>Por que escolher a Francy Seguros?</TitleWhyFrancy>
+                    <TitleWhyFrancy id="whyFrancy">Por que escolher a Francy Seguros?</TitleWhyFrancy>
                 </SectionWhyFrancy>
                 <SectionBenefits>
                     <TesteSec>
@@ -47,7 +47,7 @@ const WhyFrancy = () => {
                     {/* <a href='https://br.freepik.com/fotos-vetores-gratis/mulher-tecnologia'>Mulher tecnologia foto criado por rawpixel.com - br.freepik.com</a> */} 
                 <FigureEndSection>
                     <ContentWpp>
-                        <AncorWpp href="">falar com corretor</AncorWpp>
+                        <AncorWpp href="https://wa.me/5561985273940?text=Olá!%20:)%20Gostaria%20de%20mais%20mais%20informações%20sobre%20os%20planos.%20Poderia%20me%20ajudar?" target="_blank">falar com corretor</AncorWpp>
                         <img src={logoWhatsapp} width="30"/>
                     </ContentWpp>
                 </FigureEndSection>

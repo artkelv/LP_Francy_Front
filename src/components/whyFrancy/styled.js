@@ -11,6 +11,7 @@ export const SectionWhyFrancy = styled.section`
 export const TitleWhyFrancy = styled.h3`
     color: #1C5A3D;
     font-size: 180%;
+    padding-top: 50px;
 `
 export const SectionBenefits = styled.section`
     margin: 0 auto;
@@ -50,22 +51,25 @@ export const FigureEndSection = styled.div`
     background-repeat: no-repeat;
     background-position: 10px -40px;
 `
-export const AncorWpp = styled.div`
-    padding-right:10px;
-`
 export const ContentWpp = styled.div`
     margin-right: 1%;
     display: flex;
     align-items: center;
-    text-decoration: none;
-    color: #111;
-    border: 4px solid #4BE572;
+    padding-right: 5px;
+`
+export const AncorWpp = styled.a`
     text-transform: uppercase;
+    text-decoration: none;
+    color: #000;
     padding: 10px;
+    margin: 5px;
+    border: 4px solid #4BE572;
     background-color: rgba(114,229,91, 0.3);
-    transition:0.2s;
+    transition: 0.2s;
     &:hover{
         box-shadow: 1px 1px 15px #4BE572;
+        background-color: #fff;
+        color: #1C5A3D;
     }
     cursor: pointer;
 `

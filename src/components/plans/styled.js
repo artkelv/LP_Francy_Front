@@ -20,7 +20,6 @@ export const CardPriceSection = styled.section`
     margin: 80px auto;
     display: flex;
     justify-content: space-between;
-    
     color: #fff;
 `
 export const TitleCard = styled.h4`
@@ -56,9 +55,12 @@ export const ListBenefits = styled.ul`
     margin: 30px 20px;
     padding: 25px 0;
     list-style: none;
-    font-size: 70%;
+    font-size: 10px;
     border-top: 1px solid #fff;
     letter-spacing: 1px;
+    @media screen and (min-width:1400px) and (max-width:1920px){
+        font-size: 15px;
+    }
 `
 export const BtnPlan = styled.button`
     height: 25px;
@@ -68,6 +70,10 @@ export const BtnPlan = styled.button`
     color: #1C5A3D;
     text-transform: uppercase;
     cursor: pointer;
+    transition: 1s;
+    &:hover{
+        width: 100%;
+    }
 `
 export const FirstCardPrice = styled.div`
     background-color: #0D2329;

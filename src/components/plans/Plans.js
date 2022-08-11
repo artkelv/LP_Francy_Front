@@ -3,13 +3,14 @@ import {
     ArticTitlePrice, TitlePlans, PgraphPlans, CardPriceSection, FirstCardPrice, SecondCardPrice,
     ThirdCardPrice, FourthCardPrice, TitleCard, SubTitle, PriceCard, PerMonth, ListBenefits,
     BtnPlan
-} from "./styled"
+} from "./styled";
+import { execFuncQueAlteraBorda } from "../../pages/home/Home.js";
 
 const Plans = () => {
     return(
             <section>
                 <ArticTitlePrice>
-                    <TitlePlans>Planos ideais</TitlePlans>
+                    <TitlePlans id="plans">Planos ideais</TitlePlans>
                     <PgraphPlans>Confira alguns dos nossos melhores planos abaixo.</PgraphPlans>
                 </ArticTitlePrice>
                 <CardPriceSection>
@@ -31,7 +32,7 @@ const Plans = () => {
                                 <li><Ic/>Cirurgias e internações</li>
                             </ListBenefits>
                         </section>
-                        <BtnPlan>Obter Plano</BtnPlan>
+                        <BtnPlan onClick={execFuncQueAlteraBorda}><a href="#form">Obter Plano</a></BtnPlan>
                     </FirstCardPrice>
                     <SecondCardPrice>
                         <section>
