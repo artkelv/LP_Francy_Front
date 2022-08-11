@@ -20,7 +20,6 @@ export const CardPriceSection = styled.section`
     margin: 80px auto;
     display: flex;
     justify-content: space-between;
-    
     color: #fff;
 `
 export const TitleCard = styled.h4`
@@ -56,36 +55,39 @@ export const ListBenefits = styled.ul`
     margin: 30px 20px;
     padding: 25px 0;
     list-style: none;
-    font-size: 11px;
+    font-size: 10px;
     border-top: 1px solid #fff;
+    letter-spacing: 1px;
+    @media screen and (min-width:1400px) and (max-width:1920px){
+        font-size: 15px;
+    }
 `
 export const BtnPlan = styled.button`
     height: 25px;
     width: 100px;
     font-size: 10px;
     border: none;
-    //border-radius: 15px;
     color: #1C5A3D;
     text-transform: uppercase;
     cursor: pointer;
-    /* border-left: 1px solid #668EF5;
-    border-bottom: 1px solid #668EF5; */
+    transition: 1s;
+    &:hover{
+        width: 100%;
+    }
 `
-
-
 export const FirstCardPrice = styled.div`
     background-color: #0D2329;
-    width: 200px;
+    width: 21%;
 `
 export const SecondCardPrice = styled.div`
-    background-color: #B8EC5B;
-    width: 200px;
+    background-color: #4169B7;
+    width: 21%;
 `
 export const ThirdCardPrice = styled.div`
-    background-color: #4BE572;
-    width: 200px;
+    background-color: #50D371;
+    width: 21%;
 `
 export const FourthCardPrice = styled.div`
     background-color: #10CEA0;
-    width: 200px;
+    width: 21%;
 `
