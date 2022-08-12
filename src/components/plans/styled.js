@@ -75,6 +75,15 @@ export const BtnPlan = styled.button`
         width: 100%;
     }
 `
+export const AncorGetPlan = styled.a`
+    text-decoration: none;
+    color: #1C5A3D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+`
 export const FirstCardPrice = styled.div`
     background-color: #0D2329;
     width: 21%;
