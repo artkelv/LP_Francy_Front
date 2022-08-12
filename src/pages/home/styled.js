@@ -57,6 +57,7 @@ export const Form = styled.form`
     background-color: #fff;
     border-radius: 30px;
     margin: 20px 0;
+    transition: 1s;
 `
 export const TitleForm = styled.h4`
     color: #10CEA0;

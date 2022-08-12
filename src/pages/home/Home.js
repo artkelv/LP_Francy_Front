@@ -8,16 +8,20 @@ import Footer from '../../components/footer/footer'
 
 export const alterarCorDaBordaDoForm = () => {
     const borderForm = document.querySelector("#form")
-    borderForm.style.cssText = "transition:1s; border: 2px solid red; box-shadow: 5px 5px 15px red"
+    const testcss = {
+        boxShadow: "box-shadow: 1px 1px 100px #4BE572"
+    }
+    borderForm.style.cssText = `${testcss.boxShadow};border-color: #1C5A3D;`
+    setTimeout(() => {borderForm.style.cssText = "none"},2000)
 }
 export const execFuncQueAlteraBorda = () => {
-    setTimeout(alterarCorDaBordaDoForm, 1500)
+    setTimeout(alterarCorDaBordaDoForm, 1000)
 }
 const Home = () => {
     return(
         <>
             <Header/>
-            <MainContent>
+            <MainContent id="top">
                 <SectionTitles>
                     <Title>Planos de Saúde e Odontológicos</Title>
                     <br/>
