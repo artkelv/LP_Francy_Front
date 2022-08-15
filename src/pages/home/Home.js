@@ -1,10 +1,14 @@
-import Header from '../../components/header/Header'
-import { MainContent, SectionTitles, Form, Title, SubTitle, SectionBroker, AncorForBroker, TitleForm, PgraphForm, InputForm, SelectForm, BtnSend, PPrivacity } from "./styled"
-import logoWhatsapp from "../../assets/logo_whatsapp.png"
-import WhyFrancy from '../../components/whyFrancy/WhyFrancy'
-import Plans from '../../components/plans/Plans'
-import Operators from '../../components/operators/Operators'
-import Footer from '../../components/footer/footer'
+import Header from '../../components/header/Header';
+import logoWhatsapp from "../../assets/logo_whatsapp.png";
+import WhyFrancy from '../../components/whyFrancy/WhyFrancy';
+import Plans from '../../components/plans/Plans';
+import Operators from '../../components/operators/Operators';
+import Footer from '../../components/footer/footer';
+import useForm from '../../hooks/useForm';
+import Swal from 'sweetalert2';
+import { 
+    MainContent, SectionTitles, Form, Title, SubTitle, SectionBroker, AncorForBroker, 
+    TitleForm, PgraphForm, InputForm, SelectForm, BtnSend, PPrivacity } from "./styled";
 
 export const alterarCorDaBordaDoForm = () => {
     const borderForm = document.querySelector("#form")
@@ -18,6 +22,23 @@ export const execFuncQueAlteraBorda = () => {
     setTimeout(alterarCorDaBordaDoForm, 1000)
 }
 const Home = () => {
+    const { form, onChangeDataUser, cleanFields } = useForm({
+        nome: "",
+        email: "",
+        telefone: "",
+        plano:""
+    });
+const sendMessageByBroker = (e) => {
+    e.preventDefault()
+    cleanFields()
+    Swal.fire({
+        position: 'top-center',
+        icon: 'success',
+        title: 'Sua solicitação foi enviada!',
+        showConfirmButton: false,
+        timer: 1500
+    })
+}
     return(
         <>
             <Header/>
@@ -33,17 +54,17 @@ const Home = () => {
                     </SectionBroker>
                     {/* <a href="https://br.freepik.com/fotos-vetores-gratis/filhos">Filhos foto criado por rawpixel.com - br.freepik.com</a> */}
                 </SectionTitles>
-                <Form id="form" action="">
+                <Form id="form" onSubmit={sendMessageByBroker}>
                     <TitleForm>Faça uma cotação</TitleForm>
                     <PgraphForm>É gratuito.</PgraphForm>
-                    <InputForm type="name" placeholder='Nome'/>
-                    <InputForm type="email" placeholder='E-mail'/>
-                    <InputForm type="tel" placeholder='Telefone'/>
-                    <SelectForm>
-                        <option value="">Escolha seu plano</option>
-                        <option value="">Individual</option>
-                        <option value="">Familiar</option>
-                        <option value="">Empresarial</option>
+                    <InputForm type="name" name="nome" value={form.nome} onChange={onChangeDataUser} placeholder='Nome'/>
+                    <InputForm type="email" name="email" value={form.email} onChange={onChangeDataUser} placeholder='E-mail'/>
+                    <InputForm type="tel" name="telefone" value={form.telefone} onChange={onChangeDataUser} placeholder='Telefone'/>
+                    <SelectForm name="plano" onChange={onChangeDataUser}>
+                        <option>Escolha seu plano</option>
+                        <option value="Individual" >Individual</option>
+                        <option value="Familiar" >Familiar</option>
+                        <option value="Empresarial" >Empresarial</option>
                     </SelectForm>
                     <BtnSend>Pedir cotação</BtnSend>
                     <PPrivacity>Privacidade 100% garantida.</PPrivacity>   
