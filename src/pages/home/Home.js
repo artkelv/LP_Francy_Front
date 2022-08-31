@@ -6,6 +6,7 @@ import Operators from '../../components/operators/Operators';
 import Footer from '../../components/footer/footer';
 import useForm from '../../hooks/useForm';
 import Swal from 'sweetalert2';
+import axios from "axios";
 import { 
     MainContent, SectionTitles, Form, Title, SubTitle, SectionBroker, AncorForBroker, 
     TitleForm, PgraphForm, InputForm, SelectForm, BtnSend, PPrivacity } from "./styled";
@@ -29,15 +30,37 @@ const Home = () => {
         plano:""
     });
 const sendMessageByBroker = (e) => {
+    const BASE_URL = "https://lpfrancyback-production.up.railway.app/";
+    /* const body = {
+        nome:form.nome,
+        email:form.email,
+        telefone:form.telefone,
+        plano:form.plano
+    } */
+    axios.get(BASE_URL)
+    .then((res) => {
+        Swal.fire({
+            position: 'center',
+            icon: 'success',
+            title: 'Sua solicitação foi enviada!',
+            showConfirmButton: false,
+            timer: 1500
+        })
+        console.log("SUA RESPOSTA QUE DEU CERTO", res.data)
+    })
+    .catch((err) => {
+        Swal.fire({
+            position: 'center',
+            icon: 'error',
+            title: 'Não foi possível enviar sua solicitação! :(',
+            showConfirmButton: false,
+            timer: 1500
+          })
+        console.log("SUA RESPOSTA QUE DEU ERRADO", err.response)
+    })
     e.preventDefault()
     cleanFields()
-    Swal.fire({
-        position: 'top-center',
-        icon: 'success',
-        title: 'Sua solicitação foi enviada!',
-        showConfirmButton: false,
-        timer: 1500
-    })
+    
 }
     return(
         <>
@@ -49,7 +72,7 @@ const sendMessageByBroker = (e) => {
                     <SubTitle>pelo menor preço</SubTitle>
                     <br/>
                     <SectionBroker>
-                        <img src={logoWhatsapp} width="50"/>
+                        <img src={logoWhatsapp} alt="logo whatsApp" width="50"/>
                         <AncorForBroker href="https://wa.me/5561985273940?text=Olá!%20:)%20Gostaria%20de%20mais%20mais%20informações%20sobre%20os%20planos.%20Poderia%20me%20ajudar?" target="_blank"> falar com corretor</AncorForBroker>
                     </SectionBroker>
                     {/* <a href="https://br.freepik.com/fotos-vetores-gratis/filhos">Filhos foto criado por rawpixel.com - br.freepik.com</a> */}
