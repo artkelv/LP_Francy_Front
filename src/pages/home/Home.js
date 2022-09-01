@@ -37,7 +37,7 @@ const sendMessageByBroker = (e) => {
         telefone:form.telefone,
         plano:form.plano
     };
-    axios.get(BASE_URL, body)
+    axios.post(BASE_URL, body)
     .then((res) => {
         Swal.fire({
             position: 'center',
@@ -56,7 +56,7 @@ const sendMessageByBroker = (e) => {
             showConfirmButton: false,
             timer: 1500
           })
-        console.log("SUA RESPOSTA QUE DEU ERRADO", err.response)
+        console.log("SUA RESPOSTA DO ERRO", err.response)
     })
     e.preventDefault()
     cleanFields()
@@ -75,7 +75,7 @@ const sendMessageByBroker = (e) => {
                         <img src={logoWhatsapp} alt="logo whatsApp" width="50"/>
                         <AncorForBroker href="https://wa.me/5561985273940?text=Olá!%20:)%20Gostaria%20de%20mais%20mais%20informações%20sobre%20os%20planos.%20Poderia%20me%20ajudar?" target="_blank"> falar com corretor</AncorForBroker>
                     </SectionBroker>
-                    {/* <a href="https://br.freepik.com/fotos-vetores-gratis/filhos">Filhos foto criado por rawpixel.com - br.freepik.com</a> */}
+                    {/* <a href="https://br.freepik.com/fotos-vetores-gratis/filhos"> Filhos foto criado por rawpixel.com - br.freepik.com</a> */}
                 </SectionTitles>
                 <Form id="form" onSubmit={sendMessageByBroker}>
                     <TitleForm>Faça uma cotação</TitleForm>
