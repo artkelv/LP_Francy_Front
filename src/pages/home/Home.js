@@ -30,14 +30,14 @@ const Home = () => {
         plano:""
     });
 const sendMessageByBroker = (e) => {
-    const BASE_URL = "https://lpfrancyback-production.up.railway.app/";
-    /* const body = {
+    const BASE_URL = "https://lpfrancyback-production.up.railway.app/form/message";
+    const body = {
         nome:form.nome,
         email:form.email,
         telefone:form.telefone,
         plano:form.plano
-    } */
-    axios.get(BASE_URL)
+    };
+    axios.get(BASE_URL, body)
     .then((res) => {
         Swal.fire({
             position: 'center',
