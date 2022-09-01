@@ -37,6 +37,7 @@ const sendMessageByBroker = (e) => {
         telefone:form.telefone,
         plano:form.plano
     };
+
     axios.post(BASE_URL, body)
     .then((res) => {
         Swal.fire({
@@ -55,12 +56,11 @@ const sendMessageByBroker = (e) => {
             title: 'Não foi possível enviar sua solicitação! :(',
             showConfirmButton: false,
             timer: 1500
-          })
+        })
         console.log("SUA RESPOSTA DO ERRO", err.response)
     })
     e.preventDefault()
     cleanFields()
-    
 }
     return(
         <>
