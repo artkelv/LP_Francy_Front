@@ -37,7 +37,7 @@ const sendMessageByBroker = (e) => {
         telefone:form.telefone,
         plano:form.plano
     };
-    axios.get(BASE_URL, body)
+    axios.post(BASE_URL, body)
     .then((res) => {
         Swal.fire({
             position: 'center',
