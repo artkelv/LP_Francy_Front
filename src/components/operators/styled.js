@@ -13,7 +13,14 @@ export const TitleOperators = styled.h4`
     text-align: center;
     font-size: 25px;
     color: #1C5A3D;
+    @media screen and (max-width: 478px) {
+        font-size: 15px;
+    }
 `
 export const ImgOperators = styled.img`
     display: block;
+    @media screen and (max-width: 478px) {
+        margin-top: 50px;
+        width: 300px;
+    }
 `
