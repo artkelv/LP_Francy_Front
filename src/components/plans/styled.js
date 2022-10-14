@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import backAllBody from "../../assets/back_all_body.png" 
+
 
 export const ArticTitlePrice = styled.article`
     width: 80%;
@@ -7,13 +9,23 @@ export const ArticTitlePrice = styled.article`
     display: flex;
     flex-direction: column;
     align-items: center;
+    @media screen and (max-width:478px) {
+        
+    }
 `
 export const TitlePlans = styled.h4`
     font-size: 30px;
     color: #1C5A3D;
+    @media screen and (max-width: 478px){
+        font-size: 20px;
+    }
 `
 export const PgraphPlans = styled.p`
     color: #595959;
+    @media screen and (max-width: 478px){
+        font-size: 13px;
+        text-align: center;
+    }
 `
 export const CardPriceSection = styled.section`
     width: 80%;
@@ -21,6 +33,16 @@ export const CardPriceSection = styled.section`
     display: flex;
     justify-content: space-between;
     color: #fff;
+    @media screen and (max-width:478px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 50px 0;
+        margin: 30px 0;
+        background-image: url(${backAllBody});
+        background-size: contain;
+    }
 `
 export const TitleCard = styled.h4`
     text-align: center;
@@ -87,16 +109,32 @@ export const AncorGetPlan = styled.a`
 export const FirstCardPrice = styled.div`
     background-color: #0D2329;
     width: 21%;
+    @media screen and (max-width:478px) {
+        width: 250px;
+        margin-bottom: 50px;
+    }
 `
 export const SecondCardPrice = styled.div`
     background-color: #4169B7;
     width: 21%;
+    @media screen and (max-width:478px) {
+        width: 250px;
+        margin-bottom: 50px;
+    }
 `
 export const ThirdCardPrice = styled.div`
     background-color: #50D371;
     width: 21%;
+    @media screen and (max-width:478px) {
+        width: 250px;
+        margin-bottom: 50px;
+    }
 `
 export const FourthCardPrice = styled.div`
     background-color: #10CEA0;
     width: 21%;
+    @media screen and (max-width:478px) {
+        width: 250px;
+        margin-bottom: 50px;
+    }
 `
