@@ -10,9 +10,14 @@ export const FooterSection = styled.footer`
 `
 export const PgraphFooter = styled.p`
     color: #fff;
-    @media screen and (max-width: 478px) {
+    @media screen and (max-width: 480px) {
         font-size: 12px;
         text-align: center;
         margin: 5px;
+    }
+    @media screen and (min-width: 481px) and (max-width: 768px) {
+        font-size: 15px;
+        text-align: center;
+        margin: 15px;
     }
 `

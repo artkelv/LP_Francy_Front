@@ -9,21 +9,24 @@ export const ArticTitlePrice = styled.article`
     display: flex;
     flex-direction: column;
     align-items: center;
-    @media screen and (max-width:478px) {
+    @media screen and (max-width:480px) {
         
     }
 `
 export const TitlePlans = styled.h4`
     font-size: 30px;
     color: #1C5A3D;
-    @media screen and (max-width: 478px){
+    @media screen and (max-width: 480px){
         font-size: 20px;
     }
 `
 export const PgraphPlans = styled.p`
     color: #595959;
-    @media screen and (max-width: 478px){
+    @media screen and (max-width: 480px){
         font-size: 13px;
+        text-align: center;
+    }
+    @media screen and (min-width: 481px) and (max-width: 768px) {
         text-align: center;
     }
 `
@@ -33,13 +36,22 @@ export const CardPriceSection = styled.section`
     display: flex;
     justify-content: space-between;
     color: #fff;
-    @media screen and (max-width:478px) {
+    @media screen and (max-width:480px) {
         display: flex;
         flex-direction: column;
         align-items: center;
         width: 100%;
         padding: 50px 0;
         margin: 30px 0;
+        background-image: url(${backAllBody});
+        background-size: contain;
+    }
+    @media screen and (min-width: 481px) and (max-width: 768px) {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 50px 0;
         background-image: url(${backAllBody});
         background-size: contain;
     }
@@ -109,32 +121,48 @@ export const AncorGetPlan = styled.a`
 export const FirstCardPrice = styled.div`
     background-color: #0D2329;
     width: 21%;
-    @media screen and (max-width:478px) {
+    @media screen and (max-width:480px) {
         width: 250px;
+        margin-bottom: 50px;
+    }
+    @media screen and (min-width: 481px) and (max-width: 768px) {
+        width: 180px;
         margin-bottom: 50px;
     }
 `
 export const SecondCardPrice = styled.div`
     background-color: #4169B7;
     width: 21%;
-    @media screen and (max-width:478px) {
+    @media screen and (max-width:480px) {
         width: 250px;
+        margin-bottom: 50px;
+    }
+    @media screen and (min-width: 481px) and (max-width: 768px) {
+        width: 180px;
         margin-bottom: 50px;
     }
 `
 export const ThirdCardPrice = styled.div`
     background-color: #50D371;
     width: 21%;
-    @media screen and (max-width:478px) {
+    @media screen and (max-width:480px) {
         width: 250px;
+        margin-bottom: 50px;
+    }
+    @media screen and (min-width: 481px) and (max-width: 768px) {
+        width: 180px;
         margin-bottom: 50px;
     }
 `
 export const FourthCardPrice = styled.div`
     background-color: #10CEA0;
     width: 21%;
-    @media screen and (max-width:478px) {
+    @media screen and (max-width:480px) {
         width: 250px;
+        margin-bottom: 50px;
+    }
+    @media screen and (min-width: 481px) and (max-width: 768px) {
+        width: 180px;
         margin-bottom: 50px;
     }
 `

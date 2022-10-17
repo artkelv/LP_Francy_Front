@@ -10,7 +10,9 @@ export const ContentHeader = styled.header`
         align-items: center;
     }
     @media screen and (min-width: 481px) and (max-width: 768px) {
-        background-color: blue;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
     }
 `
 export const ListHeader = styled.nav`
@@ -22,6 +24,9 @@ export const ListHeader = styled.nav`
     @media screen and (max-width: 480px) {
         margin: 25px 0;
         font-size: 13px;
+    }
+    @media screen and (min-width: 481px) and (max-width: 768px) {
+        margin: 50px 0;
     }
 `
 export const AncorBenefits = styled.a`
@@ -42,6 +47,9 @@ export const AncorPlans = styled.a`
     }
     @media screen and (max-width: 480px) {
         padding: 0 20px;
+    }
+    @media screen and (min-width: 481px) and (max-width: 768px) {
+        
     }
 `
 export const AncorCall = styled.a`
