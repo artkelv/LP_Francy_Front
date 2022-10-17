@@ -7,12 +7,18 @@ export const SectionWhyFrancy = styled.section`
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    @media screen and (max-width: 478px){
+    @media screen and (max-width: 480px){
+        display: block;
+    }
+    @media screen and (min-width: 481px) and (max-width: 768px) {
         display: block;
     }
 `
 export const SetaImg = styled.img`
-    @media screen and (max-width: 478px){
+    @media screen and (max-width: 480px){
+        display: none;
+    }
+    @media screen and (min-width: 478.1px) and (max-width: 768px) {
         display: none;
     }
 `
@@ -20,17 +26,22 @@ export const TitleWhyFrancy = styled.h3`
     color: #1C5A3D;
     font-size: 180%;
     padding-top: 50px;
-    @media screen and (max-width: 478px){
+    @media screen and (max-width: 480px){
         font-size: 16px;
         text-align: center;
         padding-top: 20px;
+    }
+    @media screen and (min-width: 481px) and (max-width: 768px) {
+        text-align: center;
+        padding: 20px 0 40px;
+        font-size: 21px;
     }
 `
 export const SectionBenefits = styled.section`
     margin: 0 auto;
     width: 80%;
     display: flex;
-    @media screen and (max-width: 478px){
+    @media screen and (max-width: 480px){
         display: flex;
         flex-direction: column;
     }
@@ -40,7 +51,7 @@ export const TesteSec = styled.section`
     flex-direction: column;
     align-items: center;
     width: 50%;
-    @media screen and (max-width: 478px){
+    @media screen and (max-width: 480px){
         width: 100%;
     }
 `
@@ -52,7 +63,7 @@ export const DescriptionBenefits = styled.article`
     align-items: center;
     text-align: center;
     width: 80%;
-    @media screen and (max-width: 478px){
+    @media screen and (max-width: 480px){
         display: flex;
         flex-direction: row;
         border-top: 1px solid #10CEA0;
@@ -60,12 +71,12 @@ export const DescriptionBenefits = styled.article`
     }
 `
 export const BenefitsImg = styled.img`
-    @media screen and (max-width: 478px){
+    @media screen and (max-width: 480px){
         width: 50px;
     }
 `
 export const ContentBenefits = styled.div`
-    @media screen and (max-width: 478px){
+    @media screen and (max-width: 480px){
         display: flex;
         flex-direction: column;
         align-items: flex-end;
@@ -73,15 +84,21 @@ export const ContentBenefits = styled.div`
 `
 export const TitleBenefits = styled.h4`
     color: #10CEA0;
-    @media screen and (max-width: 478px){
+    @media screen and (max-width: 480px){
         font-size: 13px;
+    }
+    @media screen and (min-width: 481px) and (max-width: 768px) {
+        font-size: 14px;
     }
 `
 export const PgraphBenefits = styled.p`
     color: #7C7878;
-    @media screen and (max-width: 478px){
+    @media screen and (max-width: 480px){
         font-size: 11px;
         text-align: right;
+    }
+    @media screen and (min-width: 481px) and (max-width: 768px) {
+        font-size: 12px;
     }
 `
 export const FigureEndSection = styled.div`
@@ -95,7 +112,7 @@ export const FigureEndSection = styled.div`
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 10px -40px;
-    @media screen and (max-width: 478px){
+    @media screen and (max-width: 480px){
         background-size: contain;
         background-position: 10px -15px;
         margin: 70px 0 30px;
@@ -108,9 +125,12 @@ export const ContentWpp = styled.div`
     display: flex;
     align-items: center;
     padding-right: 5px;
-    @media screen and (max-width: 478px){
+    @media screen and (max-width: 480px){
         margin-top: 90px;
         margin-right: 0;
+    }
+    @media screen and (min-width: 481px) and (max-width: 768px) {
+        margin-top: 300px;
     }
 `
 export const AncorWpp = styled.a`
@@ -128,7 +148,7 @@ export const AncorWpp = styled.a`
         color: #1C5A3D;
     }
     cursor: pointer;
-    @media screen and (max-width: 478px){
+    @media screen and (max-width: 480px){
         border: 2px solid #4BE572;
         color: #1C5A3D;
         font-size: 13px;

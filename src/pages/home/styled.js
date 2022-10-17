@@ -8,17 +8,28 @@ export const MainContent = styled.main`
     display: flex;
     justify-content: space-evenly;
     padding: 4% 0;
-    @media screen and (max-width: 481px) {
+    @media screen and (max-width: 480px) {
         display: flex;
         flex-direction: column;
         align-items: center;
         background-size: contain;
     }
+    @media screen and (min-width: 481px) and (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 `
 export const SectionTitles = styled.section`
     order: 2;
-    @media screen and (max-width: 481px) {
+    @media screen and (max-width: 480px) {
         order:0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    @media screen and (min-width: 481px) and (max-width: 768px) {
+        order: 0;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -30,9 +41,12 @@ export const Title = styled.h1`
     display: inline-block;
     font-weight: 400;
     padding: 5px 10px;
-    @media screen and (max-width: 481px) {
+    @media screen and (max-width: 480px) {
         font-size: 12px;
         padding: 5px;
+    }
+    @media screen and (min-width: 481px) and (max-width: 768px) {
+        font-size: 17px;
     }
 `
 export const SubTitle = styled.h2`
@@ -43,11 +57,15 @@ export const SubTitle = styled.h2`
     padding: 5px 10px;
     position: relative;
     left: 150px;
-    @media screen and (max-width: 481px) {
+    @media screen and (max-width: 480px) {
         position: static;
         font-size: 12px;
         padding: 5px;
         margin: -15px;
+    }
+    @media screen and (min-width: 481px) and (max-width: 768px) {
+        font-size: 17px;
+        position: static;
     }
 `
 export const SectionBroker = styled.section`
@@ -56,7 +74,10 @@ export const SectionBroker = styled.section`
     justify-content: flex-end;
     position: relative;
     top:100px;
-    @media screen and (max-width: 481px) {
+    @media screen and (max-width: 480px) {
+        display: none;
+    }
+    @media screen and (min-width: 481px) and (max-width: 768px) {
         display: none;
     }
 `
@@ -83,7 +104,7 @@ export const Form = styled.form`
     border-radius: 30px;
     margin: 20px 0;
     transition: 1s;
-    @media screen and (max-width: 481px) {
+    @media screen and (max-width: 480px) {
         
     }
 `
@@ -92,7 +113,7 @@ export const TitleForm = styled.h4`
     text-align: center;
     margin: 0;
     padding: 18px 0 12px;
-    @media screen and (max-width: 481px) {
+    @media screen and (max-width: 480px) {
         font-size: 13px;
     }
 `
@@ -101,7 +122,7 @@ export const PgraphForm = styled.p`
     text-align: center;
     margin: 0;
     padding-bottom: 10px;
-    @media screen and (max-width: 481px) {
+    @media screen and (max-width: 480px) {
         font-size: 11px;
     }
 `
@@ -141,7 +162,7 @@ export const BtnSend = styled.button`
     &:hover{
         background-color: #4BE572 ;
     }
-    @media screen and (max-width: 481px) {
+    @media screen and (max-width: 480px) {
         font-size: 12px;
     }
 `
@@ -149,7 +170,7 @@ export const PPrivacity = styled.p`
     font-size: 12px;
     text-align: center;
     color: #1C5A3D;
-    @media screen and (max-width: 481px) {
+    @media screen and (max-width: 480px) {
         font-size: 10px;
     }
 `
