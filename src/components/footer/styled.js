@@ -21,3 +21,7 @@ export const PgraphFooter = styled.p`
         margin: 15px;
     }
 `
+export const AutorLink = styled.a`
+    color: #000;
+    text-decoration: none;
+`

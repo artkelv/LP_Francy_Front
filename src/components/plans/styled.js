@@ -1,7 +1,11 @@
 import styled from "styled-components";
 import backAllBody from "../../assets/back_all_body.png" 
 
-
+export const Sectionplans = styled.section`
+    background-image: url(${backAllBody});
+    background-size: contain;
+    padding-bottom: 50px;
+`
 export const ArticTitlePrice = styled.article`
     width: 80%;
     margin: 0 auto;
@@ -9,24 +13,29 @@ export const ArticTitlePrice = styled.article`
     display: flex;
     flex-direction: column;
     align-items: center;
-    @media screen and (max-width:480px) {
-        
-    }
 `
 export const TitlePlans = styled.h4`
-    font-size: 30px;
+    font-size: 40px;
     color: #1C5A3D;
+    padding: 15px;
+    background-color: #fff;
     @media screen and (max-width: 480px){
         font-size: 20px;
+    }
+    @media screen and (min-width: 481px) and (max-width: 768px) {
+        font-size: 25px;
     }
 `
 export const PgraphPlans = styled.p`
     color: #595959;
+    padding: 10px;
+    background-color: #fff;
     @media screen and (max-width: 480px){
         font-size: 13px;
         text-align: center;
     }
     @media screen and (min-width: 481px) and (max-width: 768px) {
+        font-size: 15px;
         text-align: center;
     }
 `
@@ -36,6 +45,7 @@ export const CardPriceSection = styled.section`
     display: flex;
     justify-content: space-between;
     color: #fff;
+
     @media screen and (max-width:480px) {
         display: flex;
         flex-direction: column;
@@ -48,12 +58,17 @@ export const CardPriceSection = styled.section`
     }
     @media screen and (min-width: 481px) and (max-width: 768px) {
         display: flex;
+        margin: 80px auto 0;
         justify-content: space-around;
         flex-wrap: wrap;
         width: 100%;
-        padding: 50px 0;
         background-image: url(${backAllBody});
         background-size: contain;
+    }
+    @media screen and (min-width: 769px) and (max-width: 1024px){
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
     }
 `
 export const TitleCard = styled.h4`
@@ -129,6 +144,10 @@ export const FirstCardPrice = styled.div`
         width: 180px;
         margin-bottom: 50px;
     }
+    @media screen and (min-width: 769px) and (max-width: 1024px){
+        width: 200px;
+        margin-bottom: 50px;
+    }
 `
 export const SecondCardPrice = styled.div`
     background-color: #4169B7;
@@ -139,6 +158,10 @@ export const SecondCardPrice = styled.div`
     }
     @media screen and (min-width: 481px) and (max-width: 768px) {
         width: 180px;
+        margin-bottom: 50px;
+    }
+    @media screen and (min-width: 769px) and (max-width: 1024px){
+        width: 200px;
         margin-bottom: 50px;
     }
 `
@@ -153,6 +176,10 @@ export const ThirdCardPrice = styled.div`
         width: 180px;
         margin-bottom: 50px;
     }
+    @media screen and (min-width: 769px) and (max-width: 1024px){
+        width: 200px;
+        margin-bottom: 50px;
+    }
 `
 export const FourthCardPrice = styled.div`
     background-color: #10CEA0;
@@ -164,5 +191,8 @@ export const FourthCardPrice = styled.div`
     @media screen and (min-width: 481px) and (max-width: 768px) {
         width: 180px;
         margin-bottom: 50px;
+    }
+    @media screen and (min-width: 769px) and (max-width: 1024px){
+        width: 200px;
     }
 `

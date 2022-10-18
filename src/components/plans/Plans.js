@@ -1,6 +1,6 @@
 import Ic from "../iconCheck/Icon.js"
 import { 
-    ArticTitlePrice, TitlePlans, PgraphPlans, CardPriceSection, FirstCardPrice, SecondCardPrice,
+    Sectionplans, ArticTitlePrice, TitlePlans, PgraphPlans, CardPriceSection, FirstCardPrice, SecondCardPrice,
     ThirdCardPrice, FourthCardPrice, TitleCard, SubTitle, PriceCard, PerMonth, ListBenefits,
     BtnPlan, AncorGetPlan
 } from "./styled";
@@ -8,7 +8,7 @@ import { execFuncQueAlteraBorda } from "../../pages/home/Home.js";
 
 const Plans = () => {
     return(
-            <section>
+            <Sectionplans>
                 <ArticTitlePrice>
                     <TitlePlans id="plans">Planos ideais</TitlePlans>
                     <PgraphPlans>Confira alguns dos nossos melhores planos abaixo.</PgraphPlans>
@@ -95,7 +95,7 @@ const Plans = () => {
                         <BtnPlan onClick={execFuncQueAlteraBorda}><AncorGetPlan href="#top">Obter Plano</AncorGetPlan></BtnPlan>
                     </FourthCardPrice>
                 </CardPriceSection>    
-            </section>
+            </Sectionplans>
     )
 }
 export default Plans

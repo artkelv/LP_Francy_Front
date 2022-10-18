@@ -5,13 +5,14 @@ import IcoDinheiro from "../../assets/ico_dinheiro.png";
 import Ico_Relogio from "../../assets/ico_relogio.png";
 import logoWhatsapp from "../../assets/logo_whatsapp.png"
 import { 
-    SectionWhyFrancy, SetaImg, TitleWhyFrancy, SectionBenefits, TesteSec, DescriptionBenefits,
+    Container, BackgroundWhyFrancy, SectionWhyFrancy, SetaImg, TitleWhyFrancy, SectionBenefits, TesteSec, DescriptionBenefits,
     TitleBenefits, BenefitsImg, ContentBenefits, PgraphBenefits, AncorWpp, ContentWpp, FigureEndSection 
 } from "./styled"
 
 const WhyFrancy = () => {
     return(
-            <aside>
+            <Container>
+                <BackgroundWhyFrancy>
                 <SectionWhyFrancy>
                     <figure>
                         <SetaImg src={SetaParaDireita} alt="Seta a direita" width="250"/>
@@ -52,6 +53,7 @@ const WhyFrancy = () => {
                         </DescriptionBenefits>
                     </TesteSec>
                 </SectionBenefits>
+                </BackgroundWhyFrancy>
                     {/* <a href='https://br.freepik.com/fotos-vetores-gratis/mulher-tecnologia'>Mulher tecnologia foto criado por rawpixel.com - br.freepik.com</a> */} 
                 <FigureEndSection>
                     <ContentWpp>
@@ -59,7 +61,7 @@ const WhyFrancy = () => {
                         <img src={logoWhatsapp} width="30"/>
                     </ContentWpp>
                 </FigureEndSection>
-            </aside>
+            </Container>
     )
 }
 export default WhyFrancy
