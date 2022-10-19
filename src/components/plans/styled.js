@@ -123,6 +123,9 @@ export const BtnPlan = styled.button`
     &:hover{
         width: 100%;
     }
+    @media screen and (max-width:480px) {
+        width: 100%;
+    }
 `
 export const AncorGetPlan = styled.a`
     text-decoration: none;
@@ -133,12 +136,26 @@ export const AncorGetPlan = styled.a`
     width: 100%;
     height: 100%;
 `
+export const ListCard = styled.li`
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+`
+export const BenefitsDescription = styled.span`
+    margin-left:8px;
+`
+
+
 export const FirstCardPrice = styled.div`
     background-color: #0D2329;
     width: 21%;
     @media screen and (max-width:480px) {
         width: 250px;
         margin-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
     @media screen and (min-width: 481px) and (max-width: 768px) {
         width: 180px;
@@ -155,6 +172,10 @@ export const SecondCardPrice = styled.div`
     @media screen and (max-width:480px) {
         width: 250px;
         margin-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
     @media screen and (min-width: 481px) and (max-width: 768px) {
         width: 180px;
@@ -171,6 +192,10 @@ export const ThirdCardPrice = styled.div`
     @media screen and (max-width:480px) {
         width: 250px;
         margin-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
     @media screen and (min-width: 481px) and (max-width: 768px) {
         width: 180px;
@@ -187,6 +212,10 @@ export const FourthCardPrice = styled.div`
     @media screen and (max-width:480px) {
         width: 250px;
         margin-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
     @media screen and (min-width: 481px) and (max-width: 768px) {
         width: 180px;

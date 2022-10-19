@@ -3,15 +3,14 @@ import HappyWomen from "../../assets/happy_women.jpg"
 import background from "../../assets/back_all_body.png"
 
 export const Container = styled.section`
-    background-image: url(${background});
-    background-size: contain;
+   
 `
 export const BackgroundWhyFrancy = styled.div`
     
 `
 export const SectionWhyFrancy = styled.section`
     width:80%;
-    margin: 20px auto;
+    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -56,6 +55,8 @@ export const SectionBenefits = styled.section`
     @media screen and (max-width: 480px){
         display: flex;
         flex-direction: column;
+        padding-bottom: 100px;
+        background-color: #fff;
     }
 `
 export const TesteSec = styled.section`
@@ -63,7 +64,6 @@ export const TesteSec = styled.section`
     flex-direction: column;
     align-items: center;
     width: 50%;
-    padding: 80px 0;
 
     background-color: #fff;
     box-shadow: 1px 1px 50px #fff;
@@ -128,10 +128,12 @@ export const FigureEndSection = styled.div`
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 10px -40px;
+    background-color: #fff;
     @media screen and (max-width: 480px){
         background-size: contain;
-        background-position: 10px -15px;
-        margin: 70px 0 30px;
+        background-position: 0 -15px;
+        margin: 0px 0 0px;
+        padding-bottom: 30px;
         display: flex;
         justify-content: center;
     }

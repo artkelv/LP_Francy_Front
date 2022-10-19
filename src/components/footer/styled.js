@@ -6,7 +6,6 @@ export const FooterSection = styled.footer`
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top:80px;
 `
 export const PgraphFooter = styled.p`
     color: #fff;

@@ -5,7 +5,7 @@ export const ContentHeader = styled.header`
     justify-content: space-around;
     padding: 15px 0;
     border-bottom: 2px solid #10CEA0;
-    margin: 1px 0;
+    background-color: #fff;
     @media screen and (max-width: 480px) {
         display: flex;
         flex-direction: column;

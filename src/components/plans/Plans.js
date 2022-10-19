@@ -1,7 +1,7 @@
 import Ic from "../iconCheck/Icon.js"
 import { 
     Sectionplans, ArticTitlePrice, TitlePlans, PgraphPlans, CardPriceSection, FirstCardPrice, SecondCardPrice,
-    ThirdCardPrice, FourthCardPrice, TitleCard, SubTitle, PriceCard, PerMonth, ListBenefits,
+    ThirdCardPrice, FourthCardPrice, TitleCard, SubTitle, PriceCard, PerMonth, ListBenefits, ListCard, BenefitsDescription,
     BtnPlan, AncorGetPlan
 } from "./styled";
 import { execFuncQueAlteraBorda } from "../../pages/home/Home.js";
@@ -25,11 +25,26 @@ const Plans = () => {
                         </section>
                         <section>
                             <ListBenefits>
-                                <li><Ic/>Consultas Médicas</li>
-                                <li><Ic/>Todos os exames</li>
-                                <li><Ic/>Atendimento 24hrs</li>
-                                <li><Ic/>Homecare e Parto</li>
-                                <li><Ic/>Cirurgias e internações</li>
+                                <ListCard>
+                                    <Ic/>
+                                    <BenefitsDescription>Consultas Médicas</BenefitsDescription>
+                                </ListCard>
+                                <ListCard>
+                                    <Ic/>
+                                    <BenefitsDescription>Todos os exames</BenefitsDescription>
+                                </ListCard>
+                                <ListCard>
+                                    <Ic/>
+                                    <BenefitsDescription>Atendimento 24hrs</BenefitsDescription>
+                                </ListCard>
+                                <ListCard>
+                                    <Ic/>
+                                    <BenefitsDescription>Homecare e Parto</BenefitsDescription>
+                                </ListCard>
+                                <ListCard>
+                                    <Ic/>
+                                    <BenefitsDescription>Cirurgias e internações</BenefitsDescription>
+                                </ListCard>
                             </ListBenefits>
                         </section>
                         <BtnPlan onClick={execFuncQueAlteraBorda}><AncorGetPlan href="#top">Obter Plano</AncorGetPlan></BtnPlan>
@@ -45,11 +60,26 @@ const Plans = () => {
                         </section>
                         <section>
                             <ListBenefits>
-                                <li><Ic/>Consultas Médicas</li>
-                                <li><Ic/>Todos os exames</li>
-                                <li><Ic/>Atendimento 24hrs</li>
-                                <li><Ic/>Homecare e Parto</li>
-                                <li><Ic/>Cirurgias e internações</li>
+                                <ListCard>
+                                    <Ic/>
+                                    <BenefitsDescription>Consultas Médicas</BenefitsDescription>
+                                </ListCard>
+                                <ListCard>
+                                    <Ic/>
+                                    <BenefitsDescription>Todos os exames</BenefitsDescription>
+                                </ListCard>
+                                <ListCard>
+                                    <Ic/>
+                                    <BenefitsDescription>Atendimento 24hrs</BenefitsDescription>
+                                </ListCard>
+                                <ListCard>
+                                    <Ic/>
+                                    <BenefitsDescription>Homecare e Parto</BenefitsDescription>
+                                </ListCard>
+                                <ListCard>
+                                    <Ic/>
+                                    <BenefitsDescription>Cirurgias e internações</BenefitsDescription>
+                                </ListCard>
                             </ListBenefits>
                         </section>
                         <BtnPlan onClick={execFuncQueAlteraBorda}><AncorGetPlan href="#top">Obter Plano</AncorGetPlan></BtnPlan>
@@ -65,11 +95,26 @@ const Plans = () => {
                         </section>
                         <section>
                             <ListBenefits>
-                                <li><Ic/>Consultas Médicas</li>
-                                <li><Ic/>Todos os exames</li>
-                                <li><Ic/>Atendimento 24hrs</li>
-                                <li><Ic/>Homecare e Parto</li>
-                                <li><Ic/>Cirurgias e internações</li>
+                                <ListCard>
+                                    <Ic/>
+                                    <BenefitsDescription>Consultas Médicas</BenefitsDescription>
+                                </ListCard>
+                                <ListCard>
+                                    <Ic/>
+                                    <BenefitsDescription>Todos os exames</BenefitsDescription>
+                                </ListCard>
+                                <ListCard>
+                                    <Ic/>
+                                    <BenefitsDescription>Atendimento 24hrs</BenefitsDescription>
+                                </ListCard>
+                                <ListCard>
+                                    <Ic/>
+                                    <BenefitsDescription>Homecare e Parto</BenefitsDescription>
+                                </ListCard>
+                                <ListCard>
+                                    <Ic/>
+                                    <BenefitsDescription>Cirurgias e internações</BenefitsDescription>
+                                </ListCard>
                             </ListBenefits>
                         </section>
                         <BtnPlan onClick={execFuncQueAlteraBorda}><AncorGetPlan href="#top">Obter Plano</AncorGetPlan></BtnPlan>
@@ -85,11 +130,26 @@ const Plans = () => {
                         </section>
                         <section>
                             <ListBenefits>
-                                <li><Ic/>Consultas Médicas</li>
-                                <li><Ic/>Todos os exames</li>
-                                <li><Ic/>Atendimento 24hrs</li>
-                                <li><Ic/>Homecare e Parto</li>
-                                <li><Ic/>Cirurgias e internações</li>
+                                <ListCard>
+                                    <Ic/>
+                                    <BenefitsDescription>Consultas Médicas</BenefitsDescription>
+                                </ListCard>
+                                <ListCard>
+                                    <Ic/>
+                                    <BenefitsDescription>Todos os exames</BenefitsDescription>
+                                </ListCard>
+                                <ListCard>
+                                    <Ic/>
+                                    <BenefitsDescription>Atendimento 24hrs</BenefitsDescription>
+                                </ListCard>
+                                <ListCard>
+                                    <Ic/>
+                                    <BenefitsDescription>Homecare e Parto</BenefitsDescription>
+                                </ListCard>
+                                <ListCard>
+                                    <Ic/>
+                                    <BenefitsDescription>Cirurgias e internações</BenefitsDescription>
+                                </ListCard>
                             </ListBenefits>
                         </section>
                         <BtnPlan onClick={execFuncQueAlteraBorda}><AncorGetPlan href="#top">Obter Plano</AncorGetPlan></BtnPlan>
