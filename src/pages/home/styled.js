@@ -48,6 +48,9 @@ export const Title = styled.h1`
     @media screen and (min-width: 481px) and (max-width: 768px) {
         font-size: 17px;
     }
+    @media screen and (min-width: 769px) and (max-width: 1024px){
+        font-size: 19px;
+    }
 `
 export const SubTitle = styled.h2`
     color: #fff;
@@ -66,6 +69,9 @@ export const SubTitle = styled.h2`
     @media screen and (min-width: 481px) and (max-width: 768px) {
         font-size: 17px;
         position: static;
+    }
+    @media screen and (min-width: 769px) and (max-width: 1024px){
+        font-size: 18px;
     }
 `
 export const SectionBroker = styled.section`

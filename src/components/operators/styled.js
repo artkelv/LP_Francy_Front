@@ -5,6 +5,8 @@ export const SectionOperators = styled.section`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color:#fff;
+    padding-bottom: 70px;
 `
 export const TitleOperators = styled.h4`
     width: 80%;
@@ -13,8 +15,10 @@ export const TitleOperators = styled.h4`
     text-align: center;
     font-size: 25px;
     color: #1C5A3D;
+    
     @media screen and (max-width: 480px) {
         font-size: 15px;
+        padding-bottom: 20px;
     }
     @media screen and (min-width: 481px) and (max-width: 768px) {
         font-size: 19px;

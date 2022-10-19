@@ -1,12 +1,21 @@
 import styled from "styled-components";
 import HappyWomen from "../../assets/happy_women.jpg"
+import background from "../../assets/back_all_body.png"
 
+export const Container = styled.section`
+   
+`
+export const BackgroundWhyFrancy = styled.div`
+    
+`
 export const SectionWhyFrancy = styled.section`
     width:80%;
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: flex-start;
+
+    background-color: #fff;
     @media screen and (max-width: 480px){
         display: block;
     }
@@ -25,7 +34,9 @@ export const SetaImg = styled.img`
 export const TitleWhyFrancy = styled.h3`
     color: #1C5A3D;
     font-size: 180%;
-    padding-top: 50px;
+    background-color: #fff;
+    padding: 50px 0;
+    box-shadow: 1px 1px 50px #fff;
     @media screen and (max-width: 480px){
         font-size: 16px;
         text-align: center;
@@ -44,6 +55,8 @@ export const SectionBenefits = styled.section`
     @media screen and (max-width: 480px){
         display: flex;
         flex-direction: column;
+        padding-bottom: 100px;
+        background-color: #fff;
     }
 `
 export const TesteSec = styled.section`
@@ -51,6 +64,9 @@ export const TesteSec = styled.section`
     flex-direction: column;
     align-items: center;
     width: 50%;
+
+    background-color: #fff;
+    box-shadow: 1px 1px 50px #fff;
     @media screen and (max-width: 480px){
         width: 100%;
     }
@@ -112,10 +128,12 @@ export const FigureEndSection = styled.div`
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 10px -40px;
+    background-color: #fff;
     @media screen and (max-width: 480px){
         background-size: contain;
-        background-position: 10px -15px;
-        margin: 70px 0 30px;
+        background-position: 0 -15px;
+        margin: 0px 0 0px;
+        padding-bottom: 30px;
         display: flex;
         justify-content: center;
     }
@@ -136,7 +154,7 @@ export const ContentWpp = styled.div`
 export const AncorWpp = styled.a`
     text-transform: uppercase;
     text-decoration: none;
-    color: #000;
+    color: #1C5A3D;
     padding: 10px;
     margin: 5px;
     border: 4px solid #4BE572;

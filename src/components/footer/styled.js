@@ -6,7 +6,6 @@ export const FooterSection = styled.footer`
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top:80px;
 `
 export const PgraphFooter = styled.p`
     color: #fff;
@@ -20,4 +19,8 @@ export const PgraphFooter = styled.p`
         text-align: center;
         margin: 15px;
     }
+`
+export const AutorLink = styled.a`
+    color: #000;
+    text-decoration: none;
 `
