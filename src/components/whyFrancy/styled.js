@@ -1,9 +1,10 @@
 import styled from "styled-components";
 import HappyWomen from "../../assets/happy_women.jpg"
-import background from "../../assets/back_all_body.png"
+import background from "../../assets/background_main.png"
 
 export const Container = styled.section`
-   
+    background-image: url(${background});
+    background-size: contain;
 `
 export const BackgroundWhyFrancy = styled.div`
     
