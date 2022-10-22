@@ -4,7 +4,7 @@ import { SectionOperators, TitleOperators, ImgOperators } from "./styled"
 const Operators = () => {
     return(
         <SectionOperators>
-            <TitleOperators>Confira algumas operadoras que nós trabalhamos:</TitleOperators>
+            <TitleOperators>Confira algumas operadoras que nós ofertamos:</TitleOperators>
             <ImgOperators src={operadoras} alt="Operadoras de planos de saúde que trabalhamos" width="550" />
         </SectionOperators>
     )

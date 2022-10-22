@@ -168,7 +168,7 @@ export const AncorWpp = styled.a`
     }
     cursor: pointer;
     @media screen and (max-width: 480px){
-        border: 2px solid #4BE572;
+        border: 1px solid #4BE572;
         color: #1C5A3D;
         font-size: 13px;
     }

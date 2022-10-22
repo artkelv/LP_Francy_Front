@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import family from "../../assets/photo_family_02.jpg"
+import backgroundMain from "../../assets/background_main.png"
 
 export const MainContent = styled.main`
     background-image: url(${family});
@@ -12,7 +13,6 @@ export const MainContent = styled.main`
         display: flex;
         flex-direction: column;
         align-items: center;
-        background-size: contain;
     }
     @media screen and (min-width: 481px) and (max-width: 768px) {
         display: flex;
