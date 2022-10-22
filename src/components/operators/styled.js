@@ -18,7 +18,6 @@ export const TitleOperators = styled.h4`
     
     @media screen and (max-width: 480px) {
         font-size: 15px;
-        padding-bottom: 20px;
     }
     @media screen and (min-width: 481px) and (max-width: 768px) {
         font-size: 19px;
