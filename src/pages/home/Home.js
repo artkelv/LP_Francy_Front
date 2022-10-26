@@ -4,6 +4,8 @@ import WhyFrancy from '../../components/whyFrancy/WhyFrancy';
 import Plans from '../../components/plans/Plans';
 import Operators from '../../components/operators/Operators';
 import Footer from '../../components/footer/footer';
+import ModalConfirm from '../../components/modalConfirm/ModalConfirm';
+
 import useForm from '../../hooks/useForm';
 import Swal from 'sweetalert2';
 import axios from "axios";
@@ -47,7 +49,7 @@ const sendMessageByBroker = (e) => {
             showConfirmButton: false,
             timer: 1500
         })
-        console.log("SUA RESPOSTA QUE DEU CERTO", res.data)
+        console.log("response", res.data)
     })
     .catch((err) => {
         Swal.fire({
@@ -57,7 +59,7 @@ const sendMessageByBroker = (e) => {
             showConfirmButton: false,
             timer: 1500
         })
-        console.log("SUA RESPOSTA DO ERRO", err.response)
+        console.log("error", err.response)
     })
     e.preventDefault()
     cleanFields()
@@ -80,10 +82,10 @@ const sendMessageByBroker = (e) => {
                 <Form id="form" onSubmit={sendMessageByBroker}>
                     <TitleForm>Faça uma cotação</TitleForm>
                     <PgraphForm>É gratuito.</PgraphForm>
-                    <InputForm type="name" name="nome" value={form.nome} onChange={onChangeDataUser} placeholder='Nome'/>
-                    <InputForm type="email" name="email" value={form.email} onChange={onChangeDataUser} placeholder='E-mail'/>
-                    <InputForm type="tel" name="telefone" value={form.telefone} onChange={onChangeDataUser} placeholder='Telefone'/>
-                    <SelectForm name="plano" onChange={onChangeDataUser}>
+                    <InputForm type="name" name="nome" value={form.nome} onChange={onChangeDataUser} placeholder='Nome' required/>
+                    <InputForm type="email" name="email" value={form.email} onChange={onChangeDataUser} placeholder='E-mail' required/>
+                    <InputForm type="tel" name="telefone" value={form.telefone} onChange={onChangeDataUser} placeholder='Telefone' required/>
+                    <SelectForm name="plano" onChange={onChangeDataUser} required>
                         <option>Escolha seu plano</option>
                         <option value="Individual" >Individual</option>
                         <option value="Familiar" >Familiar</option>
@@ -96,6 +98,7 @@ const sendMessageByBroker = (e) => {
             <WhyFrancy/>
             <Plans/>
             <Operators/>
+            <ModalConfirm/>
             <Footer/>
         </>
     )
