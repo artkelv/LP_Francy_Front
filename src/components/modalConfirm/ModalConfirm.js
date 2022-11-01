@@ -3,11 +3,10 @@ import imgConfirm from "../../assets/verifica.png"
 import { Modal, HeaderContent, BoxImgModal, ImgModal, TitleModal } from "./styled"
 
 const ModalConfirm = () => {
+
     return(
-        <Modal>
-            <HeaderContent>
-                {/* <MdOutlineClose style={CloseCircle}/> */}
-            </HeaderContent>
+        <Modal id="modalSucess">
+            <HeaderContent/>
             <BoxImgModal>
                 <ImgModal src={imgConfirm} alt="Solicitação enviada!" />
             </BoxImgModal>

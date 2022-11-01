@@ -8,16 +8,23 @@ export const Modal = styled.div`
     box-shadow: 0px 0px 200px #10CEA0;
     background-color: #fff;
     position: fixed;
-    top: 33.0%;
+    top: 25.0%;
     left: 37.0%;
+    @media screen and (max-width:480px) {
+        width: 200px;
+        left: 25.0%;
+    }
+    @media screen and (min-width: 481px) and (max-width: 768px) {
+        width: 250px;
+        left: 30.0%;
+    }
 `
 export const HeaderContent = styled.div`
     background-color: #10CEA0;
-    text-align: right;
     height: 40px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    @media screen and (max-width:480px) {
+        height: 20px;
+    }
 `
 export const BoxImgModal = styled.div`
     display: flex;
@@ -26,12 +33,19 @@ export const BoxImgModal = styled.div`
 `
 export const ImgModal = styled.img`
     width: 50px;
+    @media screen and (max-width:480px) {
+        width: 28px;
+    }
 `
 export const TitleModal = styled.h4`
     color: #10CEA0;
     text-align: center;
+    @media screen and (max-width:480px) {
+        font-size: 14px;
+    }
 `
 export const CloseCircle = {
     color: "#fff",
-    fontSize: "28px"
+    fontSize: "28px",
+    cursor: "pointer"
 }
