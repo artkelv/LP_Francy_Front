@@ -11,7 +11,9 @@ import Swal from 'sweetalert2';
 import axios from "axios";
 import { 
     MainContent, SectionTitles, Form, Title, SubTitle, SectionBroker, AncorForBroker, 
-    TitleForm, PgraphForm, InputForm, SelectForm, BtnSend, PPrivacity } from "./styled";
+    TitleForm, PgraphForm, InputForm, SelectForm, BtnSend, PPrivacity 
+} from "./styled";
+import { useState } from 'react';
 
 export const alterarCorDaBordaDoForm = () => {
     const borderForm = document.querySelector("#form")
@@ -24,50 +26,51 @@ export const alterarCorDaBordaDoForm = () => {
 export const execFuncQueAlteraBorda = () => {
     setTimeout(alterarCorDaBordaDoForm, 1000)
 }
+
 const Home = () => {
+    
+    const [statusModal, setStatusModal] = useState(false);
+
     const { form, onChangeDataUser, cleanFields } = useForm({
         nome: "",
         email: "",
         telefone: "",
         plano:""
     });
-const sendMessageByBroker = (e) => {
-    const BASE_URL = "https://lpfrancyback-production.up.railway.app/form/message";
-    const body = {
-        nome:form.nome,
-        email:form.email,
-        telefone:form.telefone,
-        plano:form.plano
-    };
 
-    axios.post(BASE_URL, body)
-    .then((res) => {
-        Swal.fire({
-            position: 'center',
-            icon: 'success',
-            title: 'Sua solicitação foi enviada!',
-            showConfirmButton: false,
-            timer: 1500
+    const sendMessageByBroker = (e) => {
+        const BASE_URL = "https://lpfrancyback-production.up.railway.app/form/message";
+        const body = {
+            nome:form.nome,
+            email:form.email,
+            telefone:form.telefone,
+            plano:form.plano
+        };
+
+        axios.post(BASE_URL, body)
+        .then((res) => {
+            setStatusModal(true)
+            
+            setTimeout(() => {
+                setStatusModal(false)
+            }, 2500)
         })
-        console.log("response", res.data)
-    })
-    .catch((err) => {
-        Swal.fire({
-            position: 'center',
-            icon: 'error',
-            title: 'Não foi possível enviar sua solicitação! :(',
-            showConfirmButton: false,
-            timer: 1500
+        .catch((err) => {
+            Swal.fire({
+                position: 'center',
+                icon: 'error',
+                title: 'Não foi possível enviar sua solicitação! :(',
+                showConfirmButton: false,
+                timer: 1500,
+            })
         })
-        console.log("error", err.response)
-    })
-    e.preventDefault()
-    cleanFields()
-}
+        e.preventDefault()
+        cleanFields()
+    }
     return(
         <>
             <Header/>
-            <MainContent id="top">
+            <MainContent>
                 <SectionTitles>
                     <Title>Planos de Saúde e Odontológicos</Title>
                     <br/>
@@ -91,14 +94,14 @@ const sendMessageByBroker = (e) => {
                         <option value="Familiar" >Familiar</option>
                         <option value="Empresarial" >Empresarial</option>
                     </SelectForm>
-                    <BtnSend>Pedir cotação</BtnSend>
+                    <BtnSend type='submit'>Pedir cotação</BtnSend>
                     <PPrivacity>Privacidade 100% garantida.</PPrivacity>   
                 </Form>
             </MainContent>
             <WhyFrancy/>
             <Plans/>
             <Operators/>
-            <ModalConfirm/>
+            {statusModal ? <ModalConfirm /> : null}
             <Footer/>
         </>
     )
