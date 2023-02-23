@@ -58,7 +58,7 @@ const WhyFrancy = () => {
                 <FigureEndSection>
                     <ContentWpp>
                         <AncorWpp href="https://wa.me/5561985273940?text=Olá!%20:)%20Gostaria%20de%20mais%20mais%20informações%20sobre%20os%20planos.%20Poderia%20me%20ajudar?" target="_blank">falar com corretor</AncorWpp>
-                        <img src={logoWhatsapp} width="30"/>
+                        <img src={logoWhatsapp} alt="contate-nos via whatsapp" width="30"/>
                     </ContentWpp>
                 </FigureEndSection>
             </Container>
