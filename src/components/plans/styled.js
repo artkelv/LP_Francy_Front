@@ -111,13 +111,17 @@ export const ListBenefits = styled.ul`
         font-size: 15px;
     }
 `
-export const BtnPlan = styled.button`
-    height: 25px;
+export const AncorGetPlan = styled.a`
+    display: block;
+    padding: 5px 0;
     width: 100px;
+    text-decoration: none;
+    background-color: #D3D3D3;
     font-size: 10px;
     border: none;
     color: #1C5A3D;
     text-transform: uppercase;
+    text-align: center;
     cursor: pointer;
     transition: 1s;
     &:hover{
@@ -125,16 +129,7 @@ export const BtnPlan = styled.button`
     }
     @media screen and (max-width:480px) {
         width: 100%;
-    }
-`
-export const AncorGetPlan = styled.a`
-    text-decoration: none;
-    color: #1C5A3D;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
+    } 
 `
 export const ListCard = styled.li`
     display: flex;
