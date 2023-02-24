@@ -4,7 +4,7 @@ export const ContentHeader = styled.header`
     display: flex;
     justify-content: space-around;
     padding: 15px 0;
-    border-bottom: 2px solid #10CEA0;
+    border-bottom: 2px solid #066950;
     background-color: #fff;
     @media screen and (max-width: 480px) {
         display: flex;
@@ -17,12 +17,13 @@ export const ContentHeader = styled.header`
        align-items: center;
     }
 `
-export const ListHeader = styled.nav`
+export const ListHeader = styled.ul`
     height: 100%;
     display: flex;
     align-items: center;
     list-style: none;
     padding: 0;
+    margin: 0 auto;
     @media screen and (max-width: 480px) {
         margin: 25px 0;
         font-size: 13px;
@@ -30,30 +31,33 @@ export const ListHeader = styled.nav`
     @media screen and (min-width: 481px) and (max-width: 768px) {
         margin: 50px 0;
     }
-`
+`/* 
+#0A180A */
 export const AncorBenefits = styled.a`
-    font-size: 20px;
-    color: #fff;
+    font-size: 16px;
+    color: #066950;
     text-decoration: none;
-    transition:0.2s;
-    border: 1px solid #0C9271;
-    padding: 0 5px;
+    border: 2px solid #066950;
+    padding: 5px 20px;
     border-radius: 5px;
-    background-color: #0C9271;
+    background-color: #fff;
     &:hover{
-        box-shadow: 0px 6px 10px #0C9271;
+        box-shadow: 0px 0px 5px #066950;
     }
 `
 export const AncorPlans = styled.a`
-    border: 1px solid #0C9271;
-    padding: 0 5px;
-    background-color: #0C9271;
-    border-radius: 5px;
-    font-size: 20px;
-    color: #fff;
+    font-size: 16px;
+    color: #066950;
     text-decoration: none;
+    transition:0.2s;
+    border: 2px solid #066950;
+    padding: 3px 20px;
+    border-radius: 5px;
+    background-color: #fff;
     margin: 0 40px;
-    transition:0.5s;
+    &:hover{
+        box-shadow: 0px 0px 5px #066950;
+    }
     @media screen and (max-width: 480px) {
         padding: 0 20px;
     }
@@ -62,16 +66,13 @@ export const AncorPlans = styled.a`
     }
 `
 export const AncorCall = styled.a`
-    font-size: 20px;
+    font-size: 16px;
     text-decoration: none;
     border-radius: 5px;
-    border: 1px solid #0A180A;
-    padding: 0 30px;
-    text-transform: uppercase;
-    color: #0A180A;
-    background-color: #fff;
-    transition:0.5s;
+    padding: 5px 45px;
+    color: #fff;
+    background-color: #066950;
     &:hover{
-        background-color: #fff;
+        background-color: #044837;
     }
 `

@@ -100,7 +100,7 @@ export const ContentBenefits = styled.div`
     }
 `
 export const TitleBenefits = styled.h4`
-    color: #10CEA0;
+    color: #066950;
     @media screen and (max-width: 480px){
         font-size: 13px;
     }
@@ -158,7 +158,7 @@ export const AncorWpp = styled.a`
     color: #1C5A3D;
     padding: 10px;
     margin: 5px;
-    border: 4px solid #4BE572;
+    border: 1px solid #4BE572;
     background-color: rgba(114,229,91, 0.3);
     transition: 0.2s;
     &:hover{

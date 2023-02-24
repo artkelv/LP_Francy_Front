@@ -2,7 +2,7 @@ import Ic from "../iconCheck/Icon.js"
 import { 
     Sectionplans, ArticTitlePrice, TitlePlans, PgraphPlans, CardPriceSection, FirstCardPrice, SecondCardPrice,
     ThirdCardPrice, FourthCardPrice, TitleCard, SubTitle, PriceCard, PerMonth, ListBenefits, ListCard, BenefitsDescription,
-    BtnPlan, AncorGetPlan
+    AncorGetPlan
 } from "./styled";
 import { execFuncQueAlteraBorda } from "../../pages/home/Home.js";
 
@@ -47,7 +47,7 @@ const Plans = () => {
                                 </ListCard>
                             </ListBenefits>
                         </section>
-                        <BtnPlan onClick={execFuncQueAlteraBorda}><AncorGetPlan href="#top">Obter Plano</AncorGetPlan></BtnPlan>
+                        <AncorGetPlan href="#top" onClick={execFuncQueAlteraBorda}>Obter Plano</AncorGetPlan>
                     </FirstCardPrice>
                     <SecondCardPrice>
                         <section>
@@ -82,7 +82,7 @@ const Plans = () => {
                                 </ListCard>
                             </ListBenefits>
                         </section>
-                        <BtnPlan onClick={execFuncQueAlteraBorda}><AncorGetPlan href="#top">Obter Plano</AncorGetPlan></BtnPlan>
+                        <AncorGetPlan href="#top" onClick={execFuncQueAlteraBorda}>Obter Plano</AncorGetPlan>
                     </SecondCardPrice>
                     <ThirdCardPrice>
                         <section>
@@ -117,7 +117,7 @@ const Plans = () => {
                                 </ListCard>
                             </ListBenefits>
                         </section>
-                        <BtnPlan onClick={execFuncQueAlteraBorda}><AncorGetPlan href="#top">Obter Plano</AncorGetPlan></BtnPlan>
+                        <AncorGetPlan href="#top" onClick={execFuncQueAlteraBorda}>Obter Plano</AncorGetPlan>
                     </ThirdCardPrice>
                     <FourthCardPrice>
                         <section>
@@ -152,7 +152,7 @@ const Plans = () => {
                                 </ListCard>
                             </ListBenefits>
                         </section>
-                        <BtnPlan onClick={execFuncQueAlteraBorda}><AncorGetPlan href="#top">Obter Plano</AncorGetPlan></BtnPlan>
+                        <AncorGetPlan href="#top" onClick={execFuncQueAlteraBorda}>Obter Plano</AncorGetPlan>
                     </FourthCardPrice>
                 </CardPriceSection>    
             </Sectionplans>

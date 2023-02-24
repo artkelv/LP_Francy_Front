@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import family from "../../assets/photo_family_02.jpg"
-import backgroundMain from "../../assets/background_main.png"
 
 export const MainContent = styled.main`
     background-image: url(${family});
@@ -89,23 +88,22 @@ export const SectionBroker = styled.section`
 `
 export const AncorForBroker = styled.a`
     margin-left: 10px;
-    border: 2px solid #4BE572;
+    border: 1px solid #4BE572;
     text-transform: uppercase;
     text-decoration: none;
     color: #000;
     padding: 10px;
-    background-color: rgba(114,229,91, 0.3);
+    background-color: rgba(114,229,91, 0.8);
     transition:0.2s;
     &:hover{
         box-shadow: 1px 1px 15px #4BE572;
-        color: #fff;
     }
 `
 export const Form = styled.form`
     display: flex;
     flex-direction: column;
     width: 250px;
-    border: 2px solid #4BE572;
+    border: 2px solid #066950;
     background-color: #fff;
     border-radius: 30px;
     margin: 20px 0;
@@ -114,8 +112,9 @@ export const Form = styled.form`
         
     }
 `
-export const TitleForm = styled.h4`
-    color: #10CEA0;
+export const TitleForm = styled.h3`
+    font-size: 16px ;
+    color: #066950;
     text-align: center;
     margin: 0;
     padding: 18px 0 12px;
@@ -124,7 +123,7 @@ export const TitleForm = styled.h4`
     }
 `
 export const PgraphForm = styled.p`
-    color: #4BE572;
+    color: #078C6B;
     text-align: center;
     margin: 0;
     padding-bottom: 10px;
@@ -136,7 +135,7 @@ export const InputForm = styled.input`
     font-size: 12px;
     padding: 5px;
     margin: 10px;
-    border: 2px solid #10CEA0;
+    border: 2px solid #078C6B;
     border-radius: 10px;
     outline: unset;
     transition: 0.5s;
@@ -149,13 +148,16 @@ export const SelectForm = styled.select`
     font-size: 12px;
     padding: 5px;
     margin: 10px;
-    border: 2px solid #10CEA0;
+    border: 2px solid #078C6B;
     border-radius: 10px;
     outline: unset;
+    &:focus{
+        box-shadow: 1px 1px 10px #10CEA0;
+    }
 `
 export const BtnSend = styled.button`
     width: 90%;
-    background-color: #10cea0;
+    background-color: #066950;
     border: none;
     cursor: pointer;
     color: #fff;
