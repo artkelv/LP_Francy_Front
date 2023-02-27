@@ -144,7 +144,6 @@ export const InputForm = styled.input`
     }
 `
 export const SelectForm = styled.select`
-    color: #7C7878;
     font-size: 12px;
     padding: 5px;
     margin: 10px;
@@ -157,7 +156,8 @@ export const SelectForm = styled.select`
 `
 export const BtnSend = styled.button`
     width: 90%;
-    background-color: #066950;
+    
+    background-color: #044837 ;
     border: none;
     cursor: pointer;
     color: #fff;
@@ -168,7 +168,7 @@ export const BtnSend = styled.button`
     border-radius: 10px;
     margin: 10px auto;
     &:hover{
-        background-color: #4BE572 ;
+        background-color: #066950;
     }
     @media screen and (max-width: 480px) {
         font-size: 12px;
