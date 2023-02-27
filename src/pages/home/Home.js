@@ -6,6 +6,9 @@ import Operators from '../../components/operators/Operators';
 import Footer from '../../components/footer/footer';
 import ModalConfirm from '../../components/modalConfirm/ModalConfirm';
 
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 import useForm from '../../hooks/useForm';
 import Swal from 'sweetalert2';
 import axios from "axios";
@@ -39,6 +42,30 @@ const Home = () => {
     });
 
     const sendMessageByBroker = (e) => {
+        e.preventDefault()
+
+        toast.success('Solicitação enviada!', {
+            position: "top-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "light",
+        });
+
+        /* setTimeout(() => {
+            setStatusModal(true)
+        }, 500)
+
+        setTimeout(() => {
+            setStatusModal(false)
+        }, 2500) */
+
+        cleanFields()
+    }
+    /* const sendMessageByBroker = (e) => {
         const BASE_URL = "https://lpfrancyback-production.up.railway.app/form/message";
         const body = {
             nome:form.nome,
@@ -66,7 +93,7 @@ const Home = () => {
         })
         e.preventDefault()
         cleanFields()
-    }
+    } */
     return(
         <>
             <Header/>
@@ -82,7 +109,7 @@ const Home = () => {
                     </SectionBroker>
                     {/* <a href="https://br.freepik.com/fotos-vetores-gratis/filhos"> Filhos foto criado por rawpixel.com - br.freepik.com</a> */}
                 </SectionTitles>
-                <Form id="form" onSubmit={sendMessageByBroker}>
+                <Form id="form" method='post' onSubmit={sendMessageByBroker}>
                     <TitleForm>Faça uma cotação</TitleForm>
                     <PgraphForm>É gratuito.</PgraphForm>
                     <InputForm type="name" name="nome" value={form.nome} onChange={onChangeDataUser} placeholder='Nome' required/>
@@ -103,6 +130,7 @@ const Home = () => {
             <Operators/>
             {statusModal ? <ModalConfirm /> : null}
             <Footer/>
+            <ToastContainer />
         </>
     )
 }
