@@ -26,13 +26,11 @@ export const ListHeader = styled.ul`
     margin: 0 auto;
     @media screen and (max-width: 480px) {
         margin: 25px 0;
-        font-size: 13px;
     }
     @media screen and (min-width: 481px) and (max-width: 768px) {
         margin: 50px 0;
     }
-`/* 
-#0A180A */
+`
 export const AncorBenefits = styled.a`
     font-size: 16px;
     color: #066950;
@@ -41,8 +39,16 @@ export const AncorBenefits = styled.a`
     padding: 5px 20px;
     border-radius: 5px;
     background-color: #fff;
+    display: inline-block;
     &:hover{
         box-shadow: 0px 0px 5px #066950;
+    }
+    @media screen and (max-width: 480px) {
+        font-size: 10px;
+        padding: 3px;
+        width: 70px;
+        text-align: center;
+        border: 1px solid #066950;
     }
 `
 export const AncorPlans = styled.a`
@@ -55,11 +61,17 @@ export const AncorPlans = styled.a`
     border-radius: 5px;
     background-color: #fff;
     margin: 0 40px;
+    display: inline-block;
     &:hover{
         box-shadow: 0px 0px 5px #066950;
     }
     @media screen and (max-width: 480px) {
-        padding: 0 20px;
+        font-size: 10px;
+        padding: 3px;
+        width: 70px;
+        text-align: center;
+        border: 1px solid #066950;
+        margin: 0 20px;
     }
     @media screen and (min-width: 481px) and (max-width: 768px) {
         
@@ -72,7 +84,15 @@ export const AncorCall = styled.a`
     padding: 5px 45px;
     color: #fff;
     background-color: #066950;
+    display: inline-block;
     &:hover{
         background-color: #044837;
+    }
+    @media screen and (max-width: 480px) {
+        font-size: 10px;
+        padding: 3px;
+        width: 70px;
+        text-align: center;
+        border: 1px solid #066950;
     }
 `
