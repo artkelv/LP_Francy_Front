@@ -49,6 +49,9 @@ export const AncorBenefits = styled.a`
         width: 70px;
         text-align: center;
         border: 1px solid #066950;
+        &:hover{
+            box-shadow: none;
+        }
     }
 `
 export const AncorPlans = styled.a`
@@ -72,6 +75,10 @@ export const AncorPlans = styled.a`
         text-align: center;
         border: 1px solid #066950;
         margin: 0 20px;
+        &:hover{
+            box-shadow: none;
+        }
+        
     }
     @media screen and (min-width: 481px) and (max-width: 768px) {
         

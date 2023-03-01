@@ -115,8 +115,8 @@ const Home = () => {
                     <InputForm type="name" name="nome" value={form.nome} onChange={onChangeDataUser} placeholder='Nome' required/>
                     <InputForm type="email" name="email" value={form.email} onChange={onChangeDataUser} placeholder='E-mail' required/>
                     <InputForm type="tel" name="telefone" value={form.telefone} onChange={onChangeDataUser} placeholder='Telefone' required/>
-                    <SelectForm name="plano" onChange={onChangeDataUser} required>
-                        <option>Escolha seu plano</option>
+                    <SelectForm name="plano" onChange={onChangeDataUser} placeholder="Escolha" defaultValue="" required>
+                        <option value="" disabled >Escolha seu plano</option>
                         <option value="Individual" >Individual</option>
                         <option value="Familiar" >Familiar</option>
                         <option value="Empresarial" >Empresarial</option>
